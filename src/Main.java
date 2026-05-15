@@ -39,8 +39,33 @@ public class Main {
         sc.nextLine();
         String palavra = sc.nextLine();
 
-        // Calculando Permutação
-        int tamanho = palavra.length(), permutacao = tamanho;
+        // Verificando letras repetidas:
+        int tamanho = 0;
+        ArrayList<Character> letras = new ArrayList<>();
+        for(int cont = 0; cont < (palavra.length()-1); cont++){
+            if(!letras.isEmpty()){
+                boolean verify = true;
+
+                for(int cont2 = 0; cont2 < letras.size(); cont2++){
+                    if(palavra.toLowerCase().charAt(cont) == letras.get(cont2)){
+                        verify = false;
+                        System.out.println("Letra REPETIDA!!  " + cont);
+                    }
+                }
+
+                if(verify){
+                    tamanho++;
+                    letras.add(palavra.toLowerCase().charAt(cont));
+                }
+            } else{
+                tamanho++;
+                letras.add(palavra.toLowerCase().charAt(cont));
+            }
+        }
+        System.out.println("Quantidade de letras únicas: " + tamanho);
+
+        // Calculando Permutação:
+        int permutacao = tamanho;
         while((tamanho-1) != 0){
             tamanho--;
             permutacao *= tamanho;
