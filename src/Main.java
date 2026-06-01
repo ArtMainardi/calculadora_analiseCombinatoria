@@ -10,8 +10,10 @@ public class Main {
             System.out.println("-------------------------------------------------");
             System.out.println("===== CALCULADORA DE ANÁLISES COMBINATÓRIAS =====");
             System.out.println("-------------------------------------------------");
-            System.out.println("Escolha uma opção: \n\r"
-                    + "1- Anagramas \n\r"
+            System.out.println("Escolha uma opção:\n\r"
+                    + "1- Anagramas\n\r"
+                    + "2 - Permutação\n\r"
+                    + "4 - Combinação\n\r"
                     + "0- Sair"
             );
             option = sc.nextInt();
@@ -21,7 +23,14 @@ public class Main {
                 case 1:
                     an.anagrama();
                     break;
+                case 2:
+
+                    break;
+                case 4:
+
+                    break;
                 case 0:
+                    System.out.println("Saindo...");
                     break;
                 default:
                     System.out.println("ERRO: opção digitada inválida!!");
