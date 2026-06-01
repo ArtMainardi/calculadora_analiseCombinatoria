@@ -6,7 +6,6 @@ public class Anagrama {
         Scanner sc = new Scanner(System.in);
         // Entrada de dados:
         System.out.println("Digite uma palavra: ");
-        sc.nextLine();
         String palavra = sc.nextLine();
 
         // Verificando letras repetidas:
@@ -19,7 +18,6 @@ public class Anagrama {
                 for(int cont2 = 0; cont2 < letras.size(); cont2++){
                     if(palavra.toLowerCase().charAt(cont) == letras.get(cont2)){
                         verify = false;
-                        System.out.println("Letra REPETIDA!!  " + cont);
                     }
                 }
 

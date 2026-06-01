@@ -12,6 +12,9 @@ public class Main {
             System.out.println("-------------------------------------------------");
             System.out.println("Escolha uma opção: \n\r"
                     + "1- Anagramas \n\r"
+                    + "2- Permutação \n\r"
+                    + "3- Arranjo \n\r"
+                    + "4- Combinação \n\r"
                     + "0- Sair"
             );
             option = sc.nextInt();
