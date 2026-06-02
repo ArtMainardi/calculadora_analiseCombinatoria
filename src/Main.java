@@ -19,10 +19,12 @@ public class Main {
             );
             option = sc.nextInt();
 
-            Anagrama an = new Anagrama();
             switch(option){
                 case 1:
-                    an.anagrama();
+                    break;
+                case 3:
+                    Arranjo arranjo = new Arranjo();
+                    arranjo.arranjo();
                     break;
                 case 0:
                     break;
