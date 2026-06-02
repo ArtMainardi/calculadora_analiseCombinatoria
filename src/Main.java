@@ -21,10 +21,12 @@ public class Main {
 
             switch(option){
                 case 1:
+                    Anagrama anag = new Anagrama();
+                    anag.anagrama();
                     break;
                 case 3:
-                    Arranjo arranjo = new Arranjo();
-                    arranjo.arranjo();
+                    Arranjo arra = new Arranjo();
+                    arra.arranjo();
                     break;
                 case 0:
                     break;
