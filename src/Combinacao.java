@@ -4,7 +4,7 @@ public class Combinacao {
     public Long c(){
         Permutacao per = new Permutacao();
         Scanner sc = new Scanner(System.in);
-        System.out.println("Insira o número total de elementos disponíveis: (Máximo 20)");
+        System.out.println("Insira o número total de elementos disponíveis:");
         int n = sc.nextInt();
         System.out.println("Insira a quantidade de elementos desejados para a escolha: (Precisa ser menor ou igual ao número total de elementos disponíveis)");
         int p = sc.nextInt();

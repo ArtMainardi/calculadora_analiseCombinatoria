@@ -26,7 +26,7 @@ public class Main {
                     an.anagrama();
                     break;
                 case 2:
-                    System.out.println("Insira o número do qual deseja fazer a permutação: (Máximo 20)");
+                    System.out.println("Insira o número do qual deseja fazer a permutação:");
                     int n = sc.nextInt();
                     System.out.println(per.p(n));
                     break;
