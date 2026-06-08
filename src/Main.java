@@ -19,6 +19,9 @@ public class Main {
             );
             option = sc.nextInt();
 
+            Anagrama an = new Anagrama();
+            Permutacao per = new Permutacao();
+            Combinacao comb = new Combinacao();
             switch(option){
                 case 1:
                     Anagrama anag = new Anagrama();
@@ -28,7 +31,16 @@ public class Main {
                     Arranjo arra = new Arranjo();
                     arra.arranjo();
                     break;
+                case 2:
+                    System.out.println("Insira o número do qual deseja fazer a permutação:");
+                    int n = sc.nextInt();
+                    System.out.println(per.p(n));
+                    break;
+                case 4:
+                    System.out.println(comb.c());
+                    break;
                 case 0:
+                    System.out.println("Saindo...");
                     break;
                 default:
                     System.out.println("ERRO: opção digitada inválida!!");
