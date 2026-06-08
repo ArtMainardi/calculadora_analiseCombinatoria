@@ -5,6 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int option;
+        String enter = "";
 
         do{
             System.out.println("-------------------------------------------------");
@@ -19,9 +20,6 @@ public class Main {
             );
             option = sc.nextInt();
 
-            Anagrama an = new Anagrama();
-            Permutacao per = new Permutacao();
-            Combinacao comb = new Combinacao();
             switch(option){
                 case 1:
                     Anagrama anag = new Anagrama();
@@ -34,10 +32,22 @@ public class Main {
                 case 2:
                     System.out.println("Insira o número do qual deseja fazer a permutação:");
                     int n = sc.nextInt();
+                    Permutacao per = new Permutacao();
                     System.out.println(per.p(n));
+
+                    System.out.println("Pressione ENTER para continuar: ");
+                    sc.nextLine();
+                    enter = sc.nextLine();
+                    System.out.println("\n\n\n\n\n\n\n\n\n"); // Espaçamento
                     break;
                 case 4:
+                    Combinacao comb = new Combinacao();
                     System.out.println(comb.c());
+
+                    System.out.println("Pressione ENTER para continuar: ");
+                    sc.nextLine();
+                    enter = sc.nextLine();
+                    System.out.println("\n\n\n\n\n\n\n\n\n"); // Espaçamento
                     break;
                 case 0:
                     System.out.println("Saindo...");

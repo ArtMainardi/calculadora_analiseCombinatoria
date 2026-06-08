@@ -42,5 +42,9 @@ public class Anagrama {
         // Saída de dados:
         System.out.println("Quantidade de anagramas: " + permutacao);
         System.out.println("\n"); // Espaçamento
+
+        System.out.println("Pressione ENTER para continuar: ");
+        String enter = sc.nextLine();
+        System.out.println("\n\n\n\n\n\n\n\n\n"); // Espaçamento
     }
 }
