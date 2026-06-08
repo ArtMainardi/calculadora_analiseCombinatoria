@@ -10,10 +10,11 @@ public class Main {
             System.out.println("-------------------------------------------------");
             System.out.println("===== CALCULADORA DE ANÁLISES COMBINATÓRIAS =====");
             System.out.println("-------------------------------------------------");
-            System.out.println("Escolha uma opção:\n\r"
-                    + "1- Anagramas\n\r"
-                    + "2 - Permutação\n\r"
-                    + "4 - Combinação\n\r"
+            System.out.println("Escolha uma opção: \n\r"
+                    + "1- Anagramas \n\r"
+                    + "2- Permutação \n\r"
+                    + "3- Arranjo \n\r"
+                    + "4- Combinação \n\r"
                     + "0- Sair"
             );
             option = sc.nextInt();
@@ -23,7 +24,12 @@ public class Main {
             Combinacao comb = new Combinacao();
             switch(option){
                 case 1:
-                    an.anagrama();
+                    Anagrama anag = new Anagrama();
+                    anag.anagrama();
+                    break;
+                case 3:
+                    Arranjo arra = new Arranjo();
+                    arra.arranjo();
                     break;
                 case 2:
                     System.out.println("Insira o número do qual deseja fazer a permutação:");
